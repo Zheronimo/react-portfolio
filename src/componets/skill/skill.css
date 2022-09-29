@@ -1,0 +1,37 @@
+.skill {
+  margin-right: 100px;
+}
+.skill__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.skill__list {
+  padding: 20px 20px 30px;
+  list-style: none;
+}
+.skill__item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+.skill__name {
+  min-width: 100px;
+  margin-right: 5px;
+}
+.skill__value {
+  margin-right: 10px;
+  width: 46px;
+  height: 32px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: roboto;
+  color: var(--gray);
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.skill__value:focus {
+  border: 1px solid var(--green);
+}

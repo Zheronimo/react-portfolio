@@ -1,13 +1,53 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --gray: #566358;
+  --dark-gray: #373e42;
+  --green: #6c9e5a;
+  --dark-green: #4e8839;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../assets/fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../assets/fonts/Roboto-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../assets/fonts/Roboto-Italic.woff2);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../assets/fonts/Roboto-BoldItalic.woff2);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: sansus;
+  src: url(../assets/fonts/Sansus-Webissimo-Regular.woff2);
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  height: 100%;
+  font-family: roboto, sans-serif;
+  color: var(--gray);
+  overflow-x: hidden;
+}
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
 }
