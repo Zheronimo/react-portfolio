@@ -5,7 +5,7 @@
 }
 .tabs__list {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   background-color: #f0efe9;
@@ -38,7 +38,6 @@
 .tabs__content--active {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 .tabs__title {
   margin-bottom: 35px;
@@ -91,7 +90,8 @@
   color: var(--dark-gray);
 }
 .tabs__input:focus,
-.tabs__input:focus {
+.tabs__input:focus,
+.tabs__area:focus {
   border: 1px solid var(--green);
 }
 .tabs__input::placeholder,
@@ -110,6 +110,7 @@
   border-radius: 5px;
   outline: none;
   color: var(--dark-gray);
+  resize: none;
 }
 .file-upload {
   display: flex;
