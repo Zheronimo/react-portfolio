@@ -1,0 +1,22 @@
+.tabs__input {
+  margin-bottom: 20px;
+  padding: 0 20px;
+  width: 300px;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  color: var(--gray);
+}
+.tabs__input:focus,
+.tabs__input:focus,
+.tabs__area:focus {
+  border: 1px solid var(--green);
+}
+.tabs__input::placeholder,
+.tabs__area::placeholder {
+  font-family: roboto;
+  font-size: 16px;
+  color: var(--dark-gray);
+  opacity: 0.5;
+}

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Skill from '../skill/Skill';
+import TabArea from '../tabArea/TabArea';
+import TabButton from '../tabButton/TabButton';
+import TabInput from '../tabInput/TabInput';
 import './tabs.css';
 import image from './upload.png';
 
@@ -32,17 +35,17 @@ const Tabs = (props) => {
         <div className='tabs__skills'>
           <Skill skills={props.skills} />
         </div>
-        <button className='tabs__btn'>Сохранить</button>
+        <TabButton text='Сохранить' />
       </div>
       <div className={toggleState === 2 ? 'tabs__content tabs__content--active' : 'tabs__content'}>
         <h2 className='tabs__title'>Страница "Блога"</h2>
         <form className='tabs__form'>
           <h3 className='tabs__desc'>Добавить запись</h3>
-          <input type='text' className='tabs__input' placeholder='Название' />
-          <input type='text' className='tabs__input' placeholder='Дата' />
-          <textarea className='tabs__area' placeholder='Содержание'></textarea>
+          <TabInput type='text' placeholder='Название' />
+          <TabInput type='text' placeholder='Дата' />
+          <TabArea placeholder='Содержание' />
         </form>
-        <button className='tabs__btn'>Добавить</button>
+        <TabButton text='Добавить' />
       </div>
       <div className={toggleState === 3 ? 'tabs__content tabs__content--active' : 'tabs__content'}>
         <h2 className='tabs__title'>Страница "Мои работы"</h2>
@@ -58,7 +61,7 @@ const Tabs = (props) => {
             </label>
           </div>
         </form>
-        <button className='tabs__btn'>Добавить</button>
+        <TabButton text='Добавить' />
       </div>
     </div>
   );

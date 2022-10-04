@@ -49,20 +49,6 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.tabs__btn {
-  margin-top: auto;
-  width: 119px;
-  height: 45px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: var(--green);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0.9;
-  transition: opacity 0.2s ease-in;
-}
 .tabs__btn:hover {
   opacity: 1;
   color: #fff;
@@ -78,39 +64,6 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 30px;
-}
-.tabs__input {
-  margin-bottom: 20px;
-  padding: 0 20px;
-  width: 300px;
-  height: 45px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  outline: none;
-  color: var(--dark-gray);
-}
-.tabs__input:focus,
-.tabs__input:focus,
-.tabs__area:focus {
-  border: 1px solid var(--green);
-}
-.tabs__input::placeholder,
-.tabs__area::placeholder {
-  font-family: roboto;
-  font-size: 16px;
-  color: var(--dark-gray);
-  opacity: 0.5;
-}
-.tabs__area {
-  max-width: 500px;
-  width: 100%;
-  height: 160px;
-  padding: 15px 20px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  outline: none;
-  color: var(--dark-gray);
-  resize: none;
 }
 .file-upload {
   display: flex;

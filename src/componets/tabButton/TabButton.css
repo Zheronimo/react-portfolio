@@ -1,0 +1,14 @@
+.tabs__btn {
+  margin-top: auto;
+  width: 113px;
+  height: 45px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in;
+}

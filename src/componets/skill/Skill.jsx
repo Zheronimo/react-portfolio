@@ -1,4 +1,5 @@
 import React from 'react';
+import SkillValue from '../skillValue/SkillValue';
 import './skill.css';
 
 const Skill = (props) => {
@@ -16,7 +17,7 @@ const Skill = (props) => {
                 <label htmlFor='skill__value' className='skill__name'>
                   {item}
                 </label>
-                <input id='skill__value' type='text' className='skill__value' />
+                <SkillValue />
                 <span className='skill__percent'>%</span>
               </li>
             );
