@@ -1,5 +1,9 @@
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
 import Admin from './page/Admin/Admin';
+import Welcome from './page/Welcome/Welcome';
+
+import './App.css';
 
 const skills = [
   {
@@ -19,7 +23,10 @@ const skills = [
 function App() {
   return (
     <div className='App'>
-      <Admin skills={skills} />
+      <Routes>
+        <Route path='/' element={<Admin skills={skills} />} />
+        <Route path='/welcome' element={<Welcome />} />
+      </Routes>
     </div>
   );
 }
