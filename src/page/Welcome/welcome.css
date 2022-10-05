@@ -16,30 +16,13 @@
   position: absolute;
   top: 25px;
   right: 100px;
-  border: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  width: 190px;
-  color: #fff;
-  background-color: transparent;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.2s linear;
-}
-.welcome__link:hover {
-  border-color: var(--dark-green);
-  background-color: var(--dark-green);
 }
 .welcom__content {
   max-width: 380px;
   width: 100%;
-  height: 400px;
+  height: 420px;
   position: relative;
   perspective: 1000px;
-  border-radius: 5px;
-  overflow: hidden;
 }
 .welcome__user,
 .welcome__autor {
@@ -72,4 +55,10 @@
 }
 .welcome__footer p {
   text-align: center;
+}
+.welcome__user.welcome__user--rotate {
+  transform: rotateY(180deg);
+}
+.welcome__autor.welcome__autor--rotate {
+  transform: rotateY(360deg);
 }

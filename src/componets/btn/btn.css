@@ -8,7 +8,7 @@
   color: #fff;
   font-weight: 500;
   background-color: var(--green);
-  transition: background-color 0.3s linear;
+  transition: background-color 0.2s linear;
   text-decoration: none;
 }
 .btn:hover {
